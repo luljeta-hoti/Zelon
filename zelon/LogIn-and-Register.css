@@ -1,0 +1,186 @@
+/* 
+Autori: Luljeta Hoti
+Per: ZELÓN Login / Register
+*/
+
+/* Fillimi i stilizimit te faqes)*/
+:root 
+{
+    --burgundy: #800020;
+    --white: #ffffff;
+    --beige: #f5f0e1;
+}
+
+
+body,
+html 
+{
+    font-family: 'Montserrat', sans-serif;
+    height: 90vh;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Mbarimi  i stilizimit te faqes)*/
+
+/* Fillimi i stilizimit LOGIN / REGISTER */
+.container 
+{
+    width: 1000px;
+    max-width: 90%;
+    height: 600px;
+    max-height: 90%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+
+
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.image-side 
+{
+    width: 50%;
+    background: #FAF5F2;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all 0.8s ease;
+    text-align: center;
+}
+
+.image-side img 
+{
+    width: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.bg-img 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+
+.form-side 
+{
+    width: 50%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.form-side h2 
+{
+    color: var(--burgundy);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-intro,
+.register-intro 
+{
+    font-size: 16px;
+    color: #6b4b4b;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.login-input 
+{
+    margin-left: 50px !important;
+}
+
+.form-side input 
+{
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid var(--burgundy);
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 45px;
+}
+
+.form-side button 
+{
+    width: 30%;
+    padding: 15px;
+    background: var(--burgundy);
+    color: var(--white);
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 150px;
+}
+
+.button-kyqu 
+{
+    margin-top: 3px !important;
+    margin-bottom: 5px !important;
+}
+
+.p-kyqu p 
+{
+    margin-top: -15px !important;
+}
+
+.form-side button:hover 
+{
+    background: var(--beige);
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+.form-side p 
+{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-side p a 
+{
+    color: var(--burgundy);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Mbarimi i stilizimit LOGIN / REGISTER */

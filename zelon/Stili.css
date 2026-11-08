@@ -1,0 +1,300 @@
+/* 
+Autori: Luljeta Hoti
+Per: ZELÓN Landing Page
+*/
+
+/* Fillimi i stilizimit te vecorive gjenerale */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: #f8f1e7;
+    color: #1b1b1b;
+}
+
+
+:root 
+{
+    --burgundy: #800020;
+    --black: #1b1b1b;
+    --white: #ffffff;
+    --beige: #f8f1e7;
+}
+
+/*Mbarimi i stilizimit te vecorive gjenerale */
+
+/* Fillimi i NAVBAR */
+nav 
+{
+    background: var(--burgundy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo 
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+nav ul 
+{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a 
+{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: transform 0.3s ease, color 0.3s ease;
+    ;
+    position: relative;
+}
+
+nav ul li a:hover 
+{
+    transform: scale(1.2) translateY(-3px);
+    color: #ff0033;
+}
+
+/* Mbarimi i NAVBAR */
+
+/* Fillimi i HERO */
+.hero 
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('foto/Hero.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: var(--white);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-btn 
+{
+    background: var(--white);
+    color: var(--burgundy);
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-btn:hover 
+{
+    background: var(--burgundy);
+    color: var(--white);
+}
+
+/* Mbarimi i HERO */
+
+/* Fillimi i PRODUCTS */
+.services 
+{
+    background: var(--black);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services h1 
+{
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.cards 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card 
+{
+    background: var(--burgundy);
+    border-radius: 15px;
+    width: 300px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card:hover 
+{
+    box-shadow: 0 15px 35px rgba(128, 0, 32, 0.5);
+    transform: translateY(-8px);
+}
+
+.card img 
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card h2 
+{
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Mbarimi i PRODUCTS */
+
+/* Fillimi RETH NESH */
+.about-us 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 80px 20px;
+    justify-content: center;
+}
+
+.about-left 
+{
+    flex: 1 1 200px;
+    height: 350px;
+}
+
+.about-left img 
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.about-right 
+{
+    flex: 1 1 400px;
+    background: var(--white);
+    border: 3px solid var(--burgundy);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.about-right h2 
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.about-right p 
+{
+    font-size: 20px;
+    color: var(--black);
+}
+
+/* Mbarimi RETH NESH */
+
+/* Fillimi i KONTAKT-FORMES */
+.contact 
+{
+    padding: 80px 20px;
+    background: var(--beige);
+    text-align: center;
+}
+
+.contact h1 
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--black);
+}
+
+.contact-form 
+{
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea 
+{
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--burgundy);
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus 
+{
+    outline: none;
+    border-color: var(--black);
+}
+
+.contact-form button 
+{
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: var(--burgundy);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover 
+{
+    background: var(--white);
+    color: var(--burgundy);
+}
+
+/* Mbarimi i KONTAKT-FORMES */
+
+/* Fillimi i FOOTER */
+footer 
+{
+    background: var(--burgundy);
+    color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+/* Mbarimi i FOOTER */
